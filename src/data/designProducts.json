@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "imageUrl": "https://gleefilesbucket.s3.eu-central-1.amazonaws.com/images-glee/content/design-1.jpg",
+    "title": "Wooden radio",
+    "type": "classic",
+    "category": 1,
+    "rating": 4
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://gleefilesbucket.s3.eu-central-1.amazonaws.com/images-glee/content/design-2.jpg",
+    "title": "Wooden chair",
+    "type": "classic",
+    "category": 1,
+    "rating": 4
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://gleefilesbucket.s3.eu-central-1.amazonaws.com/images-glee/content/design-3.jpg",
+    "title": "White chair",
+    "type": "classic",
+    "category": 1,
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://gleefilesbucket.s3.eu-central-1.amazonaws.com/images-glee/content/design-4.jpg",
+    "title": "Retro table",
+    "type": "classic",
+    "category": 1,
+    "rating": 4
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://gleefilesbucket.s3.eu-central-1.amazonaws.com/images-glee/content/design-5.jpg",
+    "title": "Wooden chair",
+    "type": "classic",
+    "category": 1,
+    "rating": 4
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://gleefilesbucket.s3.eu-central-1.amazonaws.com/images-glee/content/design-6.jpg",
+    "title": "Wooden radio",
+    "type": "classic",
+    "category": 1,
+    "rating": 4
+  }
+]
