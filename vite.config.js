@@ -7,6 +7,6 @@ export default defineConfig({
     open: true,
   },
   build: {
-    outDir: 'build', // Указываем желаемое имя директории сборки
+    outDir: 'build',
   },
 })

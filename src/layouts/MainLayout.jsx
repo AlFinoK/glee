@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom'
-import MenuList from './MenuList'
+import Header from './Header'
 
 const MainLayout = () => {
   return (
     <>
-      <MenuList />
+      <Header />
       <Outlet />
     </>
   )

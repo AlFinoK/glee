@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom'
 
-import HomeSwiper from '../components/HomeSwiper'
-import DesignProducts from '../components/DesignProducts'
-import MainProductList from '../components/MainProductList'
-import Articles from '../layouts/Articles'
+import { HomeSwiper, DesignProducts, MainProductList } from '../components'
+import { Articles } from '../layouts'
 
 import PopupBtn from '../assets/images/icons/popup-btn.svg'
 

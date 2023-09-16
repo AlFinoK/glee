@@ -1,5 +1,4 @@
-import Top from '../layouts/Breadcrumbs/Top'
-import Articles from '../layouts/Articles'
+import { Articles, Top } from '../layouts'
 
 import { Link } from 'react-router-dom'
 

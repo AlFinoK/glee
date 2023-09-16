@@ -1,7 +1,5 @@
-import Top from '../layouts/Breadcrumbs/Top'
-import Partners from '../layouts/Partners'
-
 import { Link } from 'react-router-dom'
+import { Partners, Top } from '../layouts'
 
 const Login = () => {
   return (

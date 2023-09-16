@@ -19,7 +19,7 @@ const MenuList = () => {
   return (
     <ul className="menu__list">
       <li className="menu__item menu__down">
-        <NavLink className="menu__link flex" to="/home">
+        <NavLink className="menu__link flex" to="/">
           Home
           <svg
             onClick={() => setSvgActive(svgActive)}

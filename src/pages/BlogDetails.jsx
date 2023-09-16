@@ -1,8 +1,5 @@
-import Top from '../layouts/Breadcrumbs/Top'
-import Partners from '../layouts/Partners'
-import RecentPosts from '../components/Filters/RecentPosts'
-import FilterCategory from '../components/Filters/FilterCategory'
-import FilterSearch from '../components/Filters/FilterSearch'
+import { Partners, Top } from '../layouts'
+import { RecentPosts, FilterCategory, FilterSearch } from '../components/Filters'
 
 const Blog = () => {
   return (

@@ -4,11 +4,11 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules'
 import 'swiper/css/bundle'
 
-import Top from '../layouts/Breadcrumbs/Top'
-import Articles from '../layouts/Articles'
+import { Articles, Top } from '../layouts'
+import { ProductItems } from '../components'
+
 import Arrow from '../assets/images/icons/slider-arrow.svg'
 import ThumbLump from '../assets/images/content/thumb-lump.png'
-import ProductItems from '../components/ProductItems'
 
 const ProductDetails = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null)

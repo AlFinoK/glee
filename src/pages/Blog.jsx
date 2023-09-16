@@ -1,11 +1,9 @@
 import { Pagination } from '@mui/material'
 
-import Top from '../layouts/Breadcrumbs/Top'
+import Top from '../layouts/Top'
 import Partners from '../layouts/Partners'
 import BlogItems from '../components/BlogItems'
-import RecentPosts from '../components/Filters/RecentPosts'
-import FilterCategory from '../components/Filters/FilterCategory'
-import FilterSearch from '../components/Filters/FilterSearch'
+import { RecentPosts, FilterCategory, FilterSearch } from '../components/Filters'
 
 const Blog = () => {
   return (

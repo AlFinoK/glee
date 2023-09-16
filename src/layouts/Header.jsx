@@ -13,7 +13,7 @@ const Header = () => {
     <header className="header py-6">
       <div className="container-big">
         <nav className="menu">
-          <NavLink className="menu__logo" to="/home">
+          <NavLink className="menu__logo" to="/">
             <img className="menu__logo-img" src={logoSvg} alt="logo" />
             <span className="menu__logo-name">Glee.</span>
           </NavLink>

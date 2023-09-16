@@ -87,7 +87,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-bottom__copy">©2020 CopyRight Example. All rights reserved.</div>
           <div className="footer-bottom__nav">
-            <NavLink className="footer-bottom__link" to="/home">
+            <NavLink className="footer-bottom__link" to="/">
               Home
             </NavLink>
             <NavLink className="footer-bottom__link" to="/about">

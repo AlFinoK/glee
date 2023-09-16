@@ -1,12 +1,8 @@
 import { Pagination } from '@mui/material'
 
-import Top from '../layouts/Breadcrumbs/Top'
-import Partners from '../layouts/Partners'
-import ProductItems from '../components/ProductItems'
-import FilterPrice from '../components/Filters/FilterPrice'
-import FilterBrand from '../components/Filters/FilterBrand'
-import FilterCategory from '../components/Filters/FilterCategory'
-import RecentProducts from '../components/Filters/RecentProducts'
+import { Partners, Top } from '../layouts'
+import { ProductItems } from '../components'
+import { FilterPrice, FilterBrand, FilterCategory, RecentProducts } from '../components/Filters'
 
 const ProductsShop = () => {
   return (

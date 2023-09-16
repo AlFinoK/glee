@@ -1,5 +1,4 @@
-import React from 'react'
-import Partners from './Partners'
+import { Partners } from './index'
 import { Link } from 'react-router-dom'
 
 const Articles = () => {

@@ -57,11 +57,13 @@
 }
 
 .menu {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   &__list {
     display: flex;
+    align-items: baseline;
     margin-left: 120px;
   }
   &__item {
@@ -96,6 +98,7 @@
   &__search {
     display: flex;
     align-items: center;
+    margin-right: 30px;
   }
   &__search-after {
     display: none;
@@ -103,7 +106,8 @@
   &__input {
     background-color: $bg-yellow;
     border-radius: 30px;
-    transition: 0.3s;
+    transition: all 0.3s;
+    margin-right: -30px;
     width: 50px;
     height: 50px;
     font-size: 14px;
@@ -241,6 +245,9 @@
       .menu__item {
         font-size: 40px;
         margin-bottom: 25px;
+        &::before {
+          display: none;
+        }
       }
       .menu__link {
         align-items: center;
