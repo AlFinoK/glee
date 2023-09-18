@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import logoSvg from '../assets/images/icons/logo.svg'
 import FavoriteSvg from '../assets/images/icons/favorite.svg'
@@ -13,10 +13,10 @@ const Header = () => {
     <header className="header py-6">
       <div className="container-big">
         <nav className="menu">
-          <NavLink className="menu__logo" to="/">
+          <Link className="menu__logo" to="/">
             <img className="menu__logo-img" src={logoSvg} alt="logo" />
             <span className="menu__logo-name">Glee.</span>
-          </NavLink>
+          </Link>
           <MenuList />
 
           <div className="menu__icons">

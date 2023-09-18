@@ -10,7 +10,9 @@
 @import 'global';
 @import 'components/product';
 @import 'components/design-products';
-
+.swiper-slide {
+  display: flex !important;
+}
 .top-swiper {
   &__slide {
     background-color: $bg-yellow;

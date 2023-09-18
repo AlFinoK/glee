@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 
-import { Header, Footer } from './layouts'
+import './styles/app.scss'
+import { LOGIN_ROUTE } from './utils/consts'
+import { MainLayout } from './layouts'
 import {
   Home,
   About,
@@ -12,27 +14,22 @@ import {
   ProductDetails,
   NotFound,
 } from './pages'
-import './styles/app.scss'
 
 const App = () => {
   return (
-    <>
-      <Header />
-
-      <Routes>
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/products" element={<ProductsShop />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog-details" element={<BlogDetails />} />
         <Route path="/product-details" element={<ProductDetails />} />
+        <Route path={LOGIN_ROUTE} element={<Login />} />
         <Route path="*" element={<NotFound />} />
-      </Routes>
-
-      <Footer />
-    </>
+      </Route>
+    </Routes>
   )
 }
 

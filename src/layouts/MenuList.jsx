@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 const MenuList = () => {
   const [svgActive, setSvgActive] = useState(true)
+
   const SubmenuPages = [
     'First page',
     'Second page',
@@ -42,23 +43,19 @@ const MenuList = () => {
           <ul className="submenu__list">
             {SubmenuPages.map((value) => (
               <li key={value} className="submenu__item">
-                <NavLink className="submenu__link" to="/">
+                <Link className="submenu__link" to="/">
                   {value}
-                </NavLink>
+                </Link>
               </li>
             ))}
           </ul>
         </div>
       </li>
       <li className="menu__item">
-        <NavLink className="menu__link" to="/about">
-          About
-        </NavLink>
+        <NavLink to="/about">About</NavLink>
       </li>
       <li className="menu__item">
-        <NavLink className="menu__link" to="/products">
-          Products
-        </NavLink>
+        <NavLink to="/products">Products</NavLink>
       </li>
       <li className="menu__item menu__down">
         <NavLink className="menu__link flex" to="/">
@@ -84,23 +81,19 @@ const MenuList = () => {
           <ul className="submenu__list">
             {SubmenuPages.map((value) => (
               <li key={value} className="submenu__item">
-                <NavLink className="submenu__link" to="/">
+                <Link className="submenu__link" to="/">
                   {value}
-                </NavLink>
+                </Link>
               </li>
             ))}
           </ul>
         </div>
       </li>
       <li className="menu__item">
-        <NavLink className="menu__link" to="/blog">
-          News
-        </NavLink>
+        <NavLink to="/blog">News</NavLink>
       </li>
       <li className="menu__item">
-        <NavLink className="menu__link" to="/contacts">
-          Contacts
-        </NavLink>
+        <NavLink to="/contacts">Contacts</NavLink>
       </li>
     </ul>
   )
