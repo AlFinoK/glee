@@ -7,7 +7,7 @@ import {
   REGISTRATION_ROUTE,
 } from '../utils/consts'
 
-export const authRoutes = [
+const authRoutes = [
   {
     path: ADMIN_ROUTE,
     Component: Admin,
@@ -15,7 +15,7 @@ export const authRoutes = [
   { path: BASKET_ROUTE, Component: Basket },
 ]
 
-export const publicRoutes = [
+const publicRoutes = [
   {
     path: SHOP_ROUTE,
     Component: Shop,
@@ -33,3 +33,5 @@ export const publicRoutes = [
     Component: Device,
   },
 ]
+
+export { authRoutes, publicRoutes }

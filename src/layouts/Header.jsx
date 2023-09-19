@@ -5,9 +5,21 @@ import logoSvg from '../assets/images/icons/logo.svg'
 import FavoriteSvg from '../assets/images/icons/favorite.svg'
 import CartSvg from '../assets/images/icons/cart.svg'
 import MenuList from './MenuList'
+import { useDispatch, useSelector } from 'react-redux'
 
 const Header = () => {
   const [isOpenBurger, SetOpenBurger] = useState(false)
+
+  const dispatch = useDispatch()
+  const cash = useSelector((state) => state.cashReducer.cash)
+
+  const plusNumber = () => {
+    dispatch({ type: 'ADD_CASH', payload: 1 })
+  }
+
+  const minusNumber = () => {
+    dispatch({ type: 'GET_CASH', payload: 1 })
+  }
 
   return (
     <header className="header py-6">
@@ -18,7 +30,6 @@ const Header = () => {
             <span className="menu__logo-name">Glee.</span>
           </Link>
           <MenuList />
-
           <div className="menu__icons">
             <div className="menu__search">
               <input className="menu__input" placeholder="What are you looking for?" />
@@ -35,13 +46,13 @@ const Header = () => {
               </svg>
             </div>
             <div className="menu__icons-box">
-              <button className="menu__icon-box">
+              <button className="menu__icon-box" onClick={() => plusNumber()}>
                 <img src={FavoriteSvg} alt="favorite" />
-                <span className="menu__icon-number">7</span>
+                <span className="menu__icon-number">{cash}</span>
               </button>
-              <button className="menu__icon-box">
+              <button className="menu__icon-box" onClick={() => minusNumber()}>
                 <img src={CartSvg} alt="cart" />
-                <span className="menu__icon-number">7</span>
+                <span className="menu__icon-number">{cash}</span>
               </button>
             </div>
 
