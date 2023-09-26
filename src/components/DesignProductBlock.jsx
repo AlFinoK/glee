@@ -1,4 +1,3 @@
-import React from 'react'
 import style from '../styles/DesignProductBlock.module.scss'
 
 const DesignProductBlock = ({ title, type, imageUrl }) => {

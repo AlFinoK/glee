@@ -1,4 +1,3 @@
-import React from 'react'
 import TitleLine from '../../assets/images/icons/title-line.png'
 
 const FilterBrand = () => {

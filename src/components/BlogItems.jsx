@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Link } from 'react-router-dom'
 import BlogItem1 from '../assets/images/content/blog-item-1.webp'
 import BlogItem2 from '../assets/images/content/blog-item-2.webp'

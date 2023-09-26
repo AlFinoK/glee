@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import TitleLine from '../../assets/images/icons/title-line.png'
 
 const FilterCategory = () => {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import DesignProductBlock from './DesignProductBlock'
 import products from '../data/designProducts.json'
 

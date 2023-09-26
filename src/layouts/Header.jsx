@@ -12,6 +12,7 @@ const Header = () => {
 
   const dispatch = useDispatch()
   const cash = useSelector((state) => state.cashReducer.cash)
+  const customers = useSelector((state) => state.customersReducer.customers)
 
   const plusNumber = () => {
     dispatch({ type: 'ADD_CASH', payload: 1 })
@@ -22,7 +23,7 @@ const Header = () => {
   }
 
   return (
-    <header className="header py-6">
+    <header className="header py-6 ">
       <div className="container-big">
         <nav className="menu">
           <Link className="menu__logo" to="/">
@@ -30,7 +31,7 @@ const Header = () => {
             <span className="menu__logo-name">Glee.</span>
           </Link>
           <MenuList />
-          <div className="menu__icons">
+          {/* <div className="menu__icons">
             <div className="menu__search">
               <input className="menu__input" placeholder="What are you looking for?" />
               <svg
@@ -88,6 +89,17 @@ const Header = () => {
                 />
               </svg>
             </div>
+          </div> */}
+          <div className="menu__user">
+            <Link className="menu__user-link" to="/login">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 14 14">
+                <path
+                  fill="#243f4d"
+                  d="M13.382 13.166H.549a.42.42 0 0 1-.428-.411c0-2.976 2.065-5.498 4.89-6.308-1.01-.622-1.681-1.711-1.681-2.948C3.33 1.571 4.96.003 6.966.003c2.004 0 3.636 1.568 3.636 3.496 0 1.237-.671 2.326-1.682 2.948 2.825.81 4.89 3.332 4.89 6.308a.42.42 0 0 1-.428.411zm-12.39-.823H12.94c-.22-2.984-2.815-5.347-5.973-5.347-3.159 0-5.754 2.363-5.974 5.347zM6.966.826c-1.533 0-2.78 1.2-2.78 2.673 0 1.475 1.246 2.674 2.78 2.674 1.533 0 2.78-1.2 2.78-2.674S8.499.826 6.966.826z"
+                />
+              </svg>
+            </Link>
+            <span className="menu__user-descr">Your profile</span>
           </div>
         </nav>
       </div>

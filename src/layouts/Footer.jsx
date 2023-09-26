@@ -3,7 +3,7 @@ import logoSvg from '../assets/images/icons/logo.svg'
 
 const Footer = () => {
   return (
-    <footer className="footer text-sm">
+    <footer className="footer">
       <div className="container">
         <div className="footer-top">
           <div className="footer-top__contacts">
@@ -11,12 +11,12 @@ const Footer = () => {
               <img className="footer-top__logo-img" src={logoSvg} alt="logo" />
               <span className="footer-top__logo-name">Glee.</span>
             </Link>
-            <Link className="footer-top__phone" to="tel:+832-347-5843">
+            <a className="footer-top__phone" href="tel:+832-347-5843">
               Telephone: +832-347-5843
-            </Link>
-            <Link className="footer-top__email" to="mailto:contact@Glee.com">
+            </a>
+            <a className="footer-top__email" href="mailto:contact@Glee.com">
               Email: glee@gmail.com
-            </Link>
+            </a>
           </div>
           <div className="footer-top__services">
             <h6 className="footer-top__title">Services</h6>

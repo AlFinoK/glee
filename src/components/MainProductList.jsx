@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import ProductItems from './ProductItems'
 
 const MainProductList = ({ title, price, imageUrl }) => {
