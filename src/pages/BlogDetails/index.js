@@ -1,0 +1,1 @@
+export { BlogDetailsPage } from './UI'
