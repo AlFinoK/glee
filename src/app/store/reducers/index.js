@@ -1,4 +1,4 @@
-// import cashReducer from './cashReducer'
-// import customersReducer from './customersReducer'
+import cashReducer from './cashReducer'
+import customersReducer from './customersReducer'
 
 export { cashReducer, customersReducer }
