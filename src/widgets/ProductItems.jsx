@@ -1,5 +1,5 @@
+import { MainProduct } from 'entities/MainProduct'
 import { useState, useEffect } from 'react'
-import MainProductBlock from './MainProductBlock'
 
 const ProductItems = () => {
   const [items, setItems] = useState([])
@@ -13,10 +13,12 @@ const ProductItems = () => {
   }, [])
 
   return (
-    <div className="product__content">
-      {items.map((obj) => (
-        <MainProductBlock key={obj.imageUrl} {...obj} />
-      ))}
+    <div className="products__wrapper">
+      <div className="product__content">
+        {items.map((obj) => (
+          <MainProduct key={obj.imageUrl} {...obj} />
+        ))}
+      </div>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import { ContactsForm } from '@widgets/ContactsForm'
+import { ContactsForm } from 'features/ContactsForm'
 import s from './styles.module.scss'
 
 const MainSection = () => {
@@ -36,8 +36,8 @@ const MainSection = () => {
                 </svg>
               </div>
               <h6 className="getintouch__item-title">Our Email</h6>
-              <p className="getintouch__item-text">Main Email : contact@website.com</p>
-              <p className="getintouch__item-text">Inquiries : Info@mail.com</p>
+              <p className="getintouch__item-text">Main Email : contactwebsite.com</p>
+              <p className="getintouch__item-text">Inquiries : Infomail.com</p>
             </Link>
           </div>
           <div className="getintouch__item">

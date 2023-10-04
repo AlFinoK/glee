@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import TitleLine from '../../assets/images/icons/title-line.png'
+import TitleLine from 'assets/images/icons/title-line.png'
 
 const FilterCategory = () => {
   const categoryNames = ['Chair', 'Table', 'Lamp', 'Watch', 'Clock']

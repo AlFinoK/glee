@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import BlogItem1 from '../assets/images/content/blog-item-1.webp'
-import BlogItem2 from '../assets/images/content/blog-item-2.webp'
-import BlogItem3 from '../assets/images/content/blog-item-3.webp'
-import BlogItem4 from '../assets/images/content/blog-item-4.webp'
+import BlogItem1 from 'assets/images/content/blog-item-1.webp'
+import BlogItem2 from 'assets/images/content/blog-item-2.webp'
+import BlogItem3 from 'assets/images/content/blog-item-3.webp'
+import BlogItem4 from 'assets/images/content/blog-item-4.webp'
 import s from './styles.module.scss'
 
 const BlogItems = () => {

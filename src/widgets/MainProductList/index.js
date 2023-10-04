@@ -1,0 +1,1 @@
+export { MainProductList } from './UI'

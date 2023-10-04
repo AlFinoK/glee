@@ -1,0 +1,1 @@
+export { RecentProduct } from './UI'

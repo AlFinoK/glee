@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Slider from '@mui/material/Slider'
 import Typography from '@mui/material/Typography'
 
-import TitleLine from '../../assets/images/icons/title-line.png'
+import TitleLine from 'assets/images/icons/title-line.png'
 
 const FilterPrice = () => {
   const [values, setValues] = useState([0, 1000])

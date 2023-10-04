@@ -1,16 +1,16 @@
 import { Route, Routes } from 'react-router-dom'
 
-import '@app/styles/app.scss'
-import { LOGIN_ROUTE } from '@app/consts/route'
-import { HomePage } from '@pages/Home'
-import { AboutPage } from '@pages/About'
-import { LoginPage } from '@pages/Login'
-import { ContactsPage } from '@pages/Contacts'
-import { ProductsShopPage } from '@pages/ProductsShop'
-import { BlogPage } from '@pages/Blog'
-import { BlogDetailsPage } from '@pages/BlogDetails'
-import { ProductDetailsPage } from '@pages/ProductDetails'
-import { NotFoundPage } from '@pages/NotFound'
+import 'app/styles/app.scss'
+import { LOGIN_ROUTE } from 'app/consts/route'
+import { HomePage } from 'pages/Home'
+import { AboutPage } from 'pages/About'
+import { LoginPage } from 'pages/Login'
+import { ContactsPage } from 'pages/Contacts'
+import { ProductsShopPage } from 'pages/ProductsShop'
+import { BlogPage } from 'pages/Blog'
+import { BlogDetailsPage } from 'pages/BlogDetails'
+import { ProductDetailsPage } from 'pages/ProductDetails'
+import { NotFoundPage } from 'pages/NotFound'
 
 const App = () => {
   return (

@@ -1,11 +1,14 @@
-import { Articles, Top } from '../layouts'
+import { Breadcrumbs } from 'features/Breadcrumbs'
+import { Articles } from 'shared/Articles/UI'
 import { Achievements } from './Achievements'
+import { Team } from './Team'
+import { MainSection } from './MainSection'
 
 const AboutPage = () => {
   return (
     <main className="main">
-      <Top />
-      <AboutSection />
+      <Breadcrumbs />
+      <MainSection />
       <Achievements />
       <Team />
       <Articles />
