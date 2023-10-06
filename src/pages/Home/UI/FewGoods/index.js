@@ -1,1 +1,1 @@
-export { FewGoods } from './UI'
+export { FewGoods } from './UI/FewGoods'

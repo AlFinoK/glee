@@ -1,1 +1,1 @@
-export { InfoBox } from './UI'
+export { InfoBox } from './UI/InfoBox'

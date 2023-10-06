@@ -1,1 +1,1 @@
-export { Achievements } from './UI'
+export { Achievements } from './UI/Achievements'

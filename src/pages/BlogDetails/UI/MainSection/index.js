@@ -1,1 +1,1 @@
-export { MainSection } from './UI'
+export { MainSection } from './UI/MainSection'

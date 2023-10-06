@@ -1,7 +1,7 @@
 import { MainProduct } from 'entities/MainProduct'
 import { useState, useEffect } from 'react'
 
-const ProductItems = () => {
+export const ProductItems = () => {
   const [items, setItems] = useState([])
 
   useEffect(() => {
@@ -22,5 +22,3 @@ const ProductItems = () => {
     </div>
   )
 }
-
-export default ProductItems

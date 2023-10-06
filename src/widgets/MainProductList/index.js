@@ -1,1 +1,1 @@
-export { MainProductList } from './UI'
+export { MainProductList } from './UI/MainProductList'

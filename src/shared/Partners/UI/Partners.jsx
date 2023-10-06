@@ -1,6 +1,6 @@
-import s from './styles.module.scss'
+import s from './Partners.module.scss'
 
-const Partners = () => {
+export const Partners = () => {
   return (
     <div className="partners">
       <div className="container">
@@ -35,5 +35,3 @@ const Partners = () => {
     </div>
   )
 }
-
-export default Partners

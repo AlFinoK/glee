@@ -1,1 +1,1 @@
-export { Team } from './UI'
+export { Team } from './UI/Team'

@@ -1,1 +1,1 @@
-export { HomeSwiper } from './UI'
+export { HomeSwiper } from './UI/HomeSwiper'

@@ -1,1 +1,1 @@
-export { RelatedProducts } from './UI'
+export { RelatedProducts } from './UI/RelatedProducts'
