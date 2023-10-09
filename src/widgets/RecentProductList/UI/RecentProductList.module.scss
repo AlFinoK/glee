@@ -1,0 +1,43 @@
+.recent-products {
+  &__items {
+  }
+  &__item {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__item-left {
+    img {
+      object-fit: contain;
+      height: 70px;
+      width: 70px;
+      padding: 5px;
+      border: 2px solid #f2f2f2;
+    }
+  }
+  &__item-right {
+    padding-right: 30%;
+  }
+  &__item-wrapper {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: color 0.3s;
+    span {
+      margin-bottom: 3px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &:hover {
+      color: $title;
+    }
+  }
+  .css-ryrseu-MuiRating-root {
+    font-size: 18px;
+    color: #ffcc00;
+  }
+}

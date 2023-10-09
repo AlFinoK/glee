@@ -16,14 +16,14 @@ export const FilterPrice = () => {
     return `$${value}`
   }
   return (
-    <div className="filter-price filter pb-[60px]">
+    <div className="filter-price filter">
       <div className="filter__title">
         <h4>PRICE</h4>
         <img src={TitleLine} alt="line" />
       </div>
       <div className="filter-price__slider">
         <Slider
-          className="filter-price__slider mb-[10px]"
+          className="filter-price__slider"
           min={0}
           max={1000}
           value={values}
@@ -33,7 +33,7 @@ export const FilterPrice = () => {
           aria-labelledby="range-slider"
         />
         <Typography gutterBottom>
-          <div className="flex justify-between">
+          <div>
             <span>{valueText(values[0])}</span>
             <span>{valueText(values[1])}</span>
           </div>

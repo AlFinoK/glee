@@ -1,0 +1,163 @@
+@import '../../../../../app/styles/vars';
+
+.productDetails {
+  .productDetails-top {
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__swiper {
+      display: flex;
+      flex-direction: row-reverse;
+      height: 530px;
+      min-width: 550px;
+    }
+    &__thumb-swiper2 {
+      margin-right: 70px;
+      max-width: 387px;
+      border: 2px solid $btn-def;
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &__thumb-swiper {
+      width: 100%;
+      max-width: 140px;
+      margin-right: 25px;
+      .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 140px;
+        height: 160px;
+        border: 2px solid $btn-def;
+        margin-bottom: 25px;
+        padding: 10px;
+        transition: ease-in 0.2s;
+        img {
+          transition: ease-in 0.3s;
+        }
+        &:hover {
+          background-color: $btn-def;
+          img {
+            height: 150px;
+            width: 130px;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          display: block;
+        }
+      }
+    }
+    margin-bottom: 100px;
+    &__info {
+      max-width: 530px;
+    }
+    &__info-title {
+      margin-bottom: 18px;
+      color: #333333;
+      font-family: $rubik-400;
+      font-size: 40px;
+      line-height: 26.43px;
+    }
+    .css-1lauo1g-MuiRating-root {
+      margin-bottom: 35px;
+      display: flex;
+    }
+    &__info-price {
+      color: #333333;
+      font-size: 30px;
+      font-family: $rubik-400;
+      line-height: 45px;
+      margin-bottom: 35px;
+      display: inline-block;
+    }
+    &__info-text {
+      margin-bottom: 35px;
+      line-height: 30px;
+      max-height: 123px;
+      overflow-x: hidden;
+    }
+    &__info-buy {
+      display: flex;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    &__counter {
+      margin-right: 25px;
+    }
+    &__counter-minus,
+    &__counter-plus,
+    &__counter-value {
+      display: inline-flex;
+      border: 1px solid $bg;
+      min-width: 33px;
+      min-height: 33px;
+      align-items: center;
+      justify-content: center;
+    }
+    &__counter-value {
+      border-top: 1px solid $bg;
+      border-bottom: 1px solid $bg;
+      border-left: none;
+      border-right: none;
+      padding: 3px;
+    }
+    &__counter-plus {
+    }
+    &__info-btn {
+      width: 210px;
+      height: 53px;
+      border-radius: 5px;
+      background-color: $btn-def;
+      margin-right: 13px;
+      text-align: center;
+      transition: ease-in 0.2s;
+      &:hover {
+        color: white;
+        background-color: $bg;
+      }
+    }
+    &__infoProduct {
+    }
+    &__infoProduct-block {
+      display: flex;
+      margin-bottom: 7px;
+    }
+  }
+
+  .productDetails-bottom {
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__buttons {
+      margin-bottom: 40px;
+    }
+    &__btn {
+      width: 241px;
+      height: 53px;
+      border-radius: 5px;
+      background-color: $btn-def;
+      margin-right: 13px;
+      text-align: center;
+      transition: ease-in 0.2s;
+      &:hover {
+        color: white;
+        background-color: $bg;
+      }
+    }
+    &__text {
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.videoPopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/images/content/popup.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  &__img {
+    padding: 20px;
+  }
+  &__img:hover {
+    animation: pulse infinite 0.8s;
+  }
+}

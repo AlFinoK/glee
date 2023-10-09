@@ -1,0 +1,54 @@
+@import '../../../../../app/styles/vars.scss';
+
+.filter-category {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 270px;
+    transition: ease-out 0.3s;
+    &:hover {
+      background-color: rgb(234, 239, 242);
+      .filter-category__btn {
+        background-color: #fff;
+      }
+    }
+  }
+  &__item {
+    position: relative;
+  }
+  &__item-selected {
+    background-color: $def;
+    color: white;
+    &__btn {
+      display: none;
+    }
+  }
+  &__sub-list {
+    position: absolute;
+  }
+  &__sub-item {
+  }
+
+  &__name {
+  }
+  &__btn {
+    background-color: #a3bbc8;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transition: all 0.3s;
+  }
+  &__btn-active {
+    transform: rotate(90deg);
+    background-color: #fff;
+  }
+}

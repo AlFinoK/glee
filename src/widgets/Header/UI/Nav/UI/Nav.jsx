@@ -1,4 +1,9 @@
 import s from './Nav.module.scss'
+import logoSvg from 'assets/images/icons/logo.svg'
+import FavoriteSvg from 'assets/images/icons/favorite.svg'
+import CartSvg from 'assets/images/icons/cart.svg'
+import { Link } from 'react-router-dom'
+import { MenuList } from '../../MenuList'
 
 export const Nav = () => {
   return (

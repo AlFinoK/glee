@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import logoSvg from 'logo.svg'
+import logoSvg from 'assets/images/icons/logo.svg'
 import s from './Footer.module.scss'
 
 export const Footer = () => {

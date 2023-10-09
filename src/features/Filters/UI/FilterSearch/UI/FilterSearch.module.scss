@@ -1,0 +1,42 @@
+@import '../../../../../app/styles/vars.scss';
+
+.filter-search {
+  &__label {
+    max-width: 270px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+  }
+  &__input {
+    border-radius: 5px;
+    border: 1px solid #edf1f4;
+    height: 45px;
+    padding: 5px 15px;
+    min-width: 235px;
+    &:focus {
+      box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1); /* Здесь настройки тени */
+      border: none;
+    }
+  }
+  &__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #edf1f4;
+    margin-left: -10px;
+    z-index: 10;
+    transition: all 0.3s;
+    svg {
+      transition: all 0.3s;
+    }
+    &:hover {
+      background-color: $def;
+      svg path {
+        fill: white;
+      }
+    }
+  }
+}

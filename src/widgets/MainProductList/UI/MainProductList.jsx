@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import s from './MainProductList.module.scss'
+
 import { ProductItems } from 'widgets/ProductItems'
+import s from './MainProductList.module.scss'
 
 export const MainProductList = ({ title, price, imageUrl }) => {
   const [activeProduct, setActiveProduct] = useState(0)

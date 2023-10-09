@@ -4,13 +4,13 @@ import PopupBtn from 'assets/images/icons/popup-btn.svg'
 
 export const VideoPopup = () => {
   return (
-    <div className="video-popup">
-      <Link className="popup-link" to="/">
-        <img className="video-popup__img" src={PopupBtn} alt="popup button" />
+    <div className={s.videoPopup}>
+      <Link to="/">
+        <img src={PopupBtn} alt="popup button" />
       </Link>
-      <div className="video-popup popup" id="popup">
-        <div className="video-popup popup__body">
-          <div className="video-popup popup__content">
+      <div id="popup">
+        <div>
+          <div>
             {/* <iframe
                 width="100%"
                 height="100%"

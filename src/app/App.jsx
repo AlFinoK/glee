@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
-
-import 'app/styles/app.scss'
 import { LOGIN_ROUTE } from 'app/consts/route'
+import 'app/styles/index.scss'
+
 import { HomePage } from 'pages/Home'
 import { AboutPage } from 'pages/About'
 import { LoginPage } from 'pages/Login'
@@ -11,10 +11,13 @@ import { BlogPage } from 'pages/Blog'
 import { BlogDetailsPage } from 'pages/BlogDetails'
 import { ProductDetailsPage } from 'pages/ProductDetails'
 import { NotFoundPage } from 'pages/NotFound'
+import { Header } from 'widgets/Header'
+import { Footer } from 'widgets/Footer'
 
 const App = () => {
   return (
     <div className="wrapper">
+      <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -26,6 +29,7 @@ const App = () => {
         <Route path={LOGIN_ROUTE} element={<LoginPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

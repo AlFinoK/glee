@@ -1,11 +1,6 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 
-import logoSvg from 'logo.svg'
-import FavoriteSvg from 'assets/images/icons/favorite.svg'
-import CartSvg from 'assets/images/icons/cart.svg'
-import MenuList from 'widgets/Header/UI/MenuList/UI'
 import s from './Header.module.scss'
 import { Nav } from './Nav'
 

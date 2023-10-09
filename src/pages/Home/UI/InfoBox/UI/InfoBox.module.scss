@@ -1,0 +1,48 @@
+@import '../../../../../app/styles/vars';
+
+.info-box {
+  &__inner {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fef7f0;
+  }
+  &__item {
+    position: relative;
+    max-width: 225px;
+    &::before {
+      position: absolute;
+      content: '';
+      left: -70px;
+      top: 0px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50px;
+      height: 50px;
+    }
+    &:nth-child(1) {
+      &::before {
+        background-image: url('../assets/images/icons/support.svg');
+      }
+    }
+    &:nth-child(2) {
+      &::before {
+        background-image: url('../assets/images/icons/delivery.svg');
+      }
+    }
+    &:nth-child(3) {
+      &::before {
+        background-image: url('../assets/images/icons/payment.svg');
+      }
+    }
+  }
+  &__title {
+    font-family: $rubik-700;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: $title;
+  }
+  &__text {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,65 @@
+@import '../../../../../app/styles/vars';
+
+.few-goods {
+  margin-bottom: 105px;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    display: flex;
+    max-width: 870px;
+    width: 100%;
+    background-color: #feefe2;
+    height: 390px;
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    left: 10%;
+    top: -25%;
+    object-fit: cover;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 45%;
+  }
+  &__title {
+    color: #243f4d;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    font-family: $rubik-700;
+  }
+  &__text {
+    color: #243f4d;
+    font-family: $rubik-400;
+    line-height: 30px;
+    margin-bottom: 30px;
+    max-width: 330px;
+  }
+  &__link {
+    width: 180px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid #b3b7b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    & svg {
+      margin-left: 40px;
+    }
+    &:hover {
+      animation: pulse infinite 0.5s;
+
+      svg {
+        animation: rubberBand infinite 1.5s;
+      }
+      background-color: $hover;
+    }
+  }
+}
