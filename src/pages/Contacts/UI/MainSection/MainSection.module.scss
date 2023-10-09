@@ -31,10 +31,10 @@
     border-radius: 5px;
     width: 100%;
     &:hover {
-      border: 2px solid #a3bbc8;
+      border: 2px solid $bg;
       border-radius: 5px;
       .getintouch__item-img {
-        background-color: #a3bbc8;
+        background-color: $bg;
         & path {
           fill: #fff;
         }
