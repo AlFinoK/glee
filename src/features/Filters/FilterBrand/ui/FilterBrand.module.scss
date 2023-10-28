@@ -1,0 +1,19 @@
+.filterBrand {
+  margin-bottom: 10px;
+  &__label {
+    margin-bottom: 10px;
+  }
+
+  &__productInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 44px;
+    border-radius: 5px;
+    align-items: center;
+    transition: ease-out 0.3s;
+    &:hover {
+      background-color: rgb(234, 239, 242);
+    }
+  }
+}

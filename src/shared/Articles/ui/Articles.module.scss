@@ -1,0 +1,84 @@
+@import '/src/app/styles/vars';
+
+.articles {
+  padding-top: 120px;
+  margin-bottom: 120px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 50px;
+  }
+  &__topLink {
+    padding-right: 20px;
+    position: relative;
+    color: #262626;
+    &:hover {
+      border-bottom: 2px solid $about;
+      color: $about;
+      margin-bottom: -1px;
+      padding-left: 3px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('/src/assets/images/icons/angle-right.svg');
+      width: 7px;
+      height: 12px;
+      right: 3px;
+      top: 4px;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -188px;
+  }
+  &__item {
+    background-color: #fff;
+    max-width: 370px;
+    position: relative;
+    &::before {
+      content: 'NEWS';
+      position: absolute;
+      left: 30px;
+      top: 234px;
+      height: 30px;
+      width: 100px;
+      border-radius: 15px;
+      background-color: $bg;
+      color: #fff;
+      font-size: 14px;
+      line-height: 20px;
+      font-family: $rubik-700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__itemWrapper {
+    padding: 36px 55px 30px 31px;
+  }
+  &__itemText {
+    color: #262626;
+    font-size: 18px;
+    height: 80px;
+  }
+  &__itemInfo {
+    width: 315px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 22px;
+    font-size: 12px;
+  }
+  &__itemDate {
+    margin-left: 45px;
+  }
+  &__itemAuthor {
+    margin-left: 45px;
+    &:hover {
+      border-bottom: 2px solid $about;
+      color: $about;
+      margin-bottom: -2px;
+    }
+  }
+}

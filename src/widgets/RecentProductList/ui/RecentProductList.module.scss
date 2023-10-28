@@ -1,0 +1,43 @@
+@import '/src/app/styles/vars';
+
+.recentProducts {
+  &__item {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__itemLeft {
+    img {
+      object-fit: contain;
+      height: 70px;
+      width: 70px;
+      padding: 5px;
+      border: 2px solid #f2f2f2;
+    }
+  }
+  &__itemRight {
+    padding-right: 30%;
+  }
+  &__itemWrapper {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: color 0.3s;
+    span {
+      margin-bottom: 3px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &:hover {
+      color: $title;
+    }
+  }
+  .css-ryrseu-MuiRating-root {
+    font-size: 18px;
+    color: #ffcc00;
+  }
+}

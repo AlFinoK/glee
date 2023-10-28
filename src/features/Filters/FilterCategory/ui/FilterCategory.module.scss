@@ -1,0 +1,50 @@
+@import '/src/app/styles/vars.scss';
+
+.filterCategory {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 270px;
+    transition: ease-out 0.3s;
+    &:hover {
+      background-color: rgb(234, 239, 242);
+      .filterCategory__btn {
+        background-color: #fff;
+      }
+    }
+  }
+  &__item {
+    position: relative;
+  }
+  &__itemSelected {
+    background-color: $def;
+    color: white;
+    &__btn {
+      display: none;
+    }
+  }
+  &__subList {
+    position: absolute;
+  }
+
+  &__btn {
+    background-color: $bg;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transition: all 0.3s;
+  }
+  &__btnActive {
+    transform: rotate(90deg);
+    background-color: #fff;
+  }
+}

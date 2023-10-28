@@ -1,0 +1,95 @@
+@import '/src/app/styles/vars';
+
+.blog {
+  margin-bottom: 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+    gap: 70px;
+  }
+  &__item {
+    max-width: 830px;
+    margin-bottom: 50px;
+    transition: all 0.2s;
+    display: inline-block;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__itemImg {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  &__itemInfo {
+    background-color: $bg;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    width: 275px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+  }
+  &__itemAuthor {
+    transition: color 0.3s;
+    &:hover {
+      border-bottom: 2px solid $about;
+      color: $about;
+      margin-bottom: -2px;
+    }
+  }
+  &__itemTitle {
+    text-align: start;
+  }
+  &__itemText {
+    color: $about;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  &__itemLink {
+    font-family: $rubik-700;
+    color: $bg;
+    border: 1px solid $bg;
+    width: 180px;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in 0.2s;
+    svg {
+      margin-left: 45px;
+      path {
+        transition: ease-in 0.2s;
+      }
+    }
+    &:hover {
+      svg path {
+        fill: white;
+      }
+      color: white;
+      background-color: $bg;
+    }
+  }
+
+  ::global {
+    .blogAside {
+      max-width: 270px;
+
+      .filters .recent-products__itemLeft img {
+        object-fit: cover;
+        height: 70px;
+        width: 70px;
+        padding: 0px;
+        border: none;
+        margin-right: 50px;
+      }
+      .filters .recent-products__itemRight {
+        padding-right: 0%;
+      }
+    }
+  }
+}

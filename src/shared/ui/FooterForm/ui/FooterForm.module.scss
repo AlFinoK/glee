@@ -1,0 +1,26 @@
+@import '/src/app/styles/vars.scss';
+
+.form {
+  display: flex;
+  align-items: center;
+  &__input {
+    background-color: #fef7f0;
+    max-width: 210px;
+    padding: 14px 50px 14px 16px;
+    color: $def;
+    &::placeholder {
+      color: gray;
+    }
+  }
+  &__btn {
+    font-family: $rubik-400;
+    color: #fff;
+    padding: 14px 17px;
+    background-color: $bg;
+    margin-left: -5px;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #8297a2;
+    }
+  }
+}

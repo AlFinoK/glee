@@ -1,0 +1,39 @@
+@import '/src/app/styles/vars.scss';
+
+.filters {
+  width: 100%;
+  max-width: 270px;
+  margin-right: 30px;
+  .filter {
+    margin-bottom: 100px;
+    &__title {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-family: $rubik-500;
+      color: $about;
+      img {
+        height: 3px;
+        width: 39px;
+        margin-left: 15px;
+        margin-top: -3px;
+      }
+    }
+  }
+
+  .filterPrice {
+    &__slider {
+      color: $bg;
+      height: 3px;
+      width: 250px;
+      border-radius: 0px;
+    }
+    .css-1tfve6q-MuiSlider-mark {
+      display: none;
+    }
+    .css-eg0mwd-MuiSlider-thumb {
+      border-radius: 0%;
+    }
+  }
+}

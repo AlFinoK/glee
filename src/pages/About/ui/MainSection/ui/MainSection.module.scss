@@ -1,0 +1,112 @@
+@import '/src/app/styles/vars';
+
+.about {
+  margin-bottom: 120px;
+  color: $about;
+  font-family: $rubik-400;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img {
+    max-width: 570px;
+  }
+  &__statistics {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__info {
+    margin-bottom: 50px;
+    position: relative;
+    padding-left: 185px;
+    &::before {
+      content: '12';
+      position: absolute;
+      left: 0px;
+      top: 36px;
+      color: $bg;
+      line-height: 32px;
+      font-size: 140px;
+      font-family: $rubik-700;
+    }
+  }
+  &__infoItem {
+    margin-bottom: 15px;
+    font-family: $rubik-400;
+  }
+  &__title {
+    font-size: 36px;
+    font-family: $rubik-700;
+    line-height: 32px;
+    margin-bottom: 50px;
+  }
+  &__text {
+    padding-bottom: 65px;
+    line-height: 30px;
+    font-family: $rubik-400;
+    border-bottom: 1px solid #e6eaf1;
+  }
+  &__orders {
+    display: flex;
+    justify-content: space-between;
+    max-width: 525px;
+    padding-left: 40px;
+  }
+  &__ordersItem {
+    padding: 40px 25px 13px 20px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      border-right: 1px solid #e6eaf1;
+      height: 80px;
+      top: 30px;
+      right: 0px;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+      &::before {
+        height: 42px;
+        width: 43px;
+        left: -35px;
+        background-image: url('/src/assets/images/content/about/medal.svg');
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: 50px;
+      background-repeat: no-repeat;
+    }
+    &:first-child {
+      &::before {
+        height: 38px;
+        width: 37px;
+        background-image: url('/src/assets/images/content/about/document.svg');
+      }
+    }
+    &:nth-child(2) {
+      &::before {
+        height: 40px;
+        width: 44px;
+        left: -36px;
+        background-image: url('/src/assets/images/content/about/loudspeaker.svg');
+      }
+    }
+  }
+  &__ordersNumber {
+    font-size: 36px;
+    line-height: 38px;
+    font-family: $rubik-700;
+    margin-left: -2px;
+  }
+  &__ordersName {
+    font-family: $rubik-700;
+    line-height: 17px;
+  }
+}

@@ -1,0 +1,32 @@
+@import '/src/app/styles/vars';
+
+.designProduct {
+  &__contentItem {
+    color: $bg;
+    font-family: $rubik-700;
+    max-width: 370px;
+    height: 246px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  &__contentImg {
+    position: relative;
+  }
+  &__contentBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+  &__contentTitle {
+    max-width: 230px;
+    padding: 38px 0 16px 30px;
+    font-family: $rubik-700;
+    color: $title;
+    font-size: 20px;
+  }
+  &__contentType {
+    padding-left: 30px;
+  }
+}

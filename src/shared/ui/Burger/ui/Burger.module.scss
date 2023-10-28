@@ -1,0 +1,60 @@
+@import '/src/app/styles/vars';
+
+.menu {
+  &__burger {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: $bg;
+    border-radius: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $bg-yellow;
+    }
+  }
+  &__burgerInner {
+    animation: fadeInRight 0.7s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    background-color: $bg-yellow;
+    height: 100vh;
+    width: 70vw;
+    position: absolute;
+    z-index: 20;
+    top: -26px;
+    right: -16px;
+    .menu__list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 50px;
+      color: white;
+      .menu__item {
+        font-size: 40px;
+        margin-bottom: 25px;
+        &::before {
+          display: none;
+        }
+      }
+      .menu__link {
+        align-items: center;
+        .svg-plus {
+          margin-left: 10px;
+          width: 20px;
+          height: 20px;
+          polygon {
+            fill: #fff;
+          }
+        }
+      }
+      .menu__item:hover {
+        margin-bottom: 23px;
+      }
+      .submenu__list {
+        margin-top: 20px;
+      }
+    }
+  }
+}

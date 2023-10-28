@@ -1,0 +1,51 @@
+@import '/src/app/styles/vars.scss';
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  &__contacts {
+    max-width: 200px;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__logoImg {
+    margin-right: 13px;
+  }
+  &__logoName {
+    font-size: 36px;
+  }
+  &__phone {
+    display: inline-block;
+    margin-bottom: 23px;
+  }
+  &__services {
+    min-width: 150px;
+  }
+  &__title {
+    color: $title;
+    font-family: $rubik-700;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    font-size: 16px;
+  }
+  &__item {
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    &:hover {
+      color: $title;
+    }
+  }
+  &__account {
+    max-width: 95px;
+  }
+  &__text {
+    max-width: 235px;
+    margin-bottom: 40px;
+  }
+  margin-bottom: 80px;
+}

@@ -1,0 +1,13 @@
+.products {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    .product__content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .partners {
+    padding: 100px 0;
+    height: 270px;
+  }
+}

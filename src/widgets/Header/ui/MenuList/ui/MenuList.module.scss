@@ -1,0 +1,24 @@
+@import '/src/app/styles/vars';
+
+.menu {
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &__item {
+    font-size: 1.2rem;
+    position: relative;
+    user-select: none;
+
+    &:hover {
+      margin-bottom: -2px;
+      border-bottom: 2px solid $about;
+      color: $about;
+    }
+  }
+
+  &__link {
+    svg {
+    }
+  }
+}

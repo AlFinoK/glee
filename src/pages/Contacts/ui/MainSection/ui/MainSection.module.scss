@@ -1,0 +1,121 @@
+@import '/src/app/styles/vars';
+
+.getintouch {
+  &__subtitle {
+    text-align: center;
+    font-family: $rubik-700;
+    margin-bottom: 10px;
+    color: $bg;
+  }
+  &__title {
+    text-align: center;
+    color: $def;
+    font-size: 35px;
+    font-family: $rubik-700;
+    line-height: 57px;
+    margin-bottom: 70px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    align-items: center;
+  }
+  &__item {
+    padding: 70px 50px 70px 50px;
+    max-width: 370px;
+    background-color: #fbfbfb;
+    text-align: center;
+    transition: all 0.3s;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 100%;
+    &:hover {
+      border: 2px solid $bg;
+      border-radius: 5px;
+      .getintouch__item-img {
+        background-color: $bg;
+        & path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  &__item-img {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 6px 57px rgba(37, 37, 37, 0.05);
+    border-radius: 25px;
+    margin: 0 auto 65px;
+    transition: all 0.4s;
+    & svg {
+      margin: auto 0;
+    }
+  }
+  &__item-title {
+    margin-bottom: 30px;
+    color: #222222;
+    font-size: 20px;
+    font-family: $rubik-700;
+  }
+  &__item-text {
+    margin-bottom: 10px;
+  }
+  &__input-wrapper {
+    max-width: 620px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__input {
+    width: 300px;
+    height: 50px;
+    padding: 20px 50px 20px 20px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
+  &__area {
+    padding: 30px;
+    background-color: #fafafa;
+    height: 175px;
+    width: 100%;
+    resize: none;
+    overflow-wrap: break-word;
+    max-width: 620px;
+    margin-bottom: 30px;
+  }
+  &__input,
+  &__area {
+    &::placeholder {
+      color: #9092a3;
+    }
+    &:focus {
+      box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1); /* Здесь настройки тени */
+    }
+  }
+  &__btn {
+    max-width: 200px;
+    width: 100%;
+    height: 50px;
+    background-color: $bg;
+    color: white;
+    font-size: 15px;
+    padding: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 10px;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $def;
+    }
+  }
+  &__formContent {
+    display: flex;
+    justify-content: space-between;
+  }
+}

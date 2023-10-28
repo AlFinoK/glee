@@ -1,0 +1,68 @@
+@import '/src/app/styles/vars';
+
+.product {
+  &__contentItem {
+    box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 10px;
+    text-align: center;
+    padding: 27px 42px 31px 42px;
+    width: 270px;
+    height: 380px;
+    transition: all 0.3s;
+    &:hover {
+      box-shadow: 0 0 30px 3px $hover;
+      .product__content-links {
+        transform: translateY(0);
+      }
+    }
+  }
+  &__content-images {
+    overflow: hidden;
+    position: relative;
+  }
+  &__content-img {
+    object-fit: contain;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  &__contentLinks {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 30px;
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(300%);
+    transition: all 0.3s;
+  }
+  &__contentLink {
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    &:hover {
+      background-color: $bg;
+      path {
+        fill: white;
+      }
+    }
+  }
+  &__contentTitle {
+    color: $title;
+    margin-bottom: 20px;
+  }
+  &__contentPrice {
+    font-family: $rubik-700;
+    color: $bg;
+    display: block;
+    margin-bottom: 30px;
+  }
+}

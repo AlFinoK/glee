@@ -1,0 +1,84 @@
+@import '/src/app/styles/vars';
+
+.login {
+  padding: 120px 0;
+  margin: 0 auto;
+  max-width: 470px;
+  &__input {
+    display: block;
+    max-width: 470px;
+    height: 60px;
+    padding: 10px 50px 10px 30px;
+    border: 2px solid #f6f6f6;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    &:focus {
+      box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
+    }
+  }
+  &__btn {
+    background-color: $bg;
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: $def;
+    }
+  }
+  &__chooseBox {
+    padding: 35px 0;
+    border-bottom: 2px solid #f6f6f6;
+    margin-bottom: 35px;
+  }
+  &__checkbox {
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+    background-color: #ebebeb;
+    margin-right: 5px;
+    &:checked {
+      background-image: url('../assets/images/icons/done.svg');
+      background-repeat: no-repeat;
+    }
+  }
+  &__links {
+    user-select: none;
+  }
+  &__linkLost {
+    float: right;
+    transition: color 0.3s;
+    &:hover {
+      color: $about;
+    }
+  }
+  &__linkBox {
+    margin-bottom: 25px;
+    text-align: center;
+    a {
+      transition: color 0.3s;
+      &:hover {
+        color: $about;
+      }
+    }
+  }
+  &__registerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    color: #243f4d;
+    font-size: 18px;
+    border: 2px solid $bg;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $bg;
+      color: white;
+    }
+  }
+}
